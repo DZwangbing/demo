@@ -1,0 +1,33 @@
+{
+    "name": "wechaty",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www",
+        "test": "nodemon ./bin/www"
+    },
+    "bin": {},
+    "dependencies": {
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "ejs": "^3.1.5",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
+        "morgan": "~1.9.1",
+        "node-schedule": "^2.0.0",
+        "qr-image": "^3.2.0",
+        "qrcode-terminal": "^0.12.0",
+        "request": "^2.88.2",
+        "silly-datetime": "^0.1.2",
+        "urlencode": "^1.1.0",
+        "utility": "1.16.3",
+        "wechaty": "^0.56.6",
+        "wechaty-puppet-padlocal": "^0.2.42",
+        "async": "^3.2.0",
+        "images": "^3.2.3",
+        "mysql": "^2.18.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}

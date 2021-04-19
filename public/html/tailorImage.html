@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    </head>
+    <body>
+        <div id="app">
+            <el-upload class="upload-demo" drag action="http://192.168.0.101:3000/tailor_image" multiple :on-success="handleAvatarSuccess">
+                <i class="el-icon-upload"></i>
+                <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
+            </el-upload>
+        </div>
+
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data: function () {
+                    return {
+                        
+                    }
+                },
+                methods:{
+                    handleAvatarSuccess(res, file) {
+                        this.$message({
+                            message: `${res.data}上传成功`,
+                            type: 'success'
+                        });
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
